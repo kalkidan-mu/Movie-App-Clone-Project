@@ -1,1 +1,0 @@
-Disclaimer: This project is a personal educational replica of Netflix and is not affiliated with or endorsed by Netflix, Inc. The logo and branding are used under fair use for non-commercial educational purposes.
