@@ -22,12 +22,15 @@ const handleClick=(movie)=> {
     if(trailerUrl){
         setTrailerUrl('')
     }else{
-        movieTrailer(movie?.title ||movie?.name||movie?.original_name)
-        .then((url)=>{
-            console.log(url)
-            const urlParams=new URLSearchParams(new URL(url).search)
-            setTrailerUrl(urlParams.get('v'))
-        })
+        movieTrailer(movie?.title || movie?.name || movie?.original_name).then(
+          (url) => {
+            if (url?.startsWith("http://")) {
+              url = url.replace("http://", "https://");
+            }
+            const urlParams = new URLSearchParams(new URL(url).search);
+            setTrailerUrl(urlParams.get("v"));
+          }
+        );
     }
 }
 const opts={
