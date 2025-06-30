@@ -1,12 +1,12 @@
 {
-  "homepage": "https://kalkidan-mu.github.io/Netflix-Clone-Project",
-  "name": "netfliex-clone",
+  "homepage": "https://kalkidan-mu.github.io/Movie-App-Clone-Project/",
+  "name": "movie-app-clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
